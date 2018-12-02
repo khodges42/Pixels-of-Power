@@ -1,0 +1,154 @@
+{
+	"characters": {
+		"wizard": {
+			"max_hp": 100,
+			"max_energy": 100,
+			"abilities": [
+				"fireball",
+				"freeze",
+				"healing herb",
+				"earth wall"
+			]
+		
+		},
+		"dread_knight": {
+			"max_hp": 100,
+			"max_energy": 100,
+			"abilities": [
+				"fireball",
+				"freeze",
+				"healing herb",
+				"earth wall"
+			]
+		
+		},
+		"crusader": {
+			"max_hp": 100,
+			"max_energy": 100,
+			"abilities": [
+				"fireball",
+				"freeze",
+				"healing herb",
+				"earth wall"
+			]
+		
+		},
+		"barbarian": {
+			"max_hp": 100,
+			"max_energy": 100,
+			"abilities": [
+				"fireball",
+				"freeze",
+				"healing herb",
+				"earth wall"
+			]
+		
+		},
+		"archer": {
+			"max_hp": 100,
+			"max_energy": 100,
+			"abilities": [
+				"fireball",
+				"freeze",
+				"healing herb",
+				"earth wall"
+			]
+		
+		}
+	
+	},
+	
+	"abilities" : {
+		"fireball": {
+			"energy_cost": 10,
+			"cooldown": 3,
+			"target": "aim",
+			"range": 20,
+			"target_damage": 10,
+			"target_heal": 0,
+			"apply_effect": None
+		},
+		"freeze": {
+			"energy_cost": 20,
+			"cooldown": 10,
+			"target": "enemy",
+			"range": 10,
+			"target_damage": 20,
+			"target_heal": 0,
+			"apply_effect": "frozen"
+		},
+		"healing herb": {
+			"energy_cost": 0,
+			"cooldown": 10,
+			"target": "self",
+			"range": 0,
+			"target_damage": 0,
+			"target_heal": 200,
+			"apply_effect": "slowed"
+		},
+		"earth wall": {
+			"energy_cost": 50,
+			"cooldown": 20,
+			"target": "ground",
+			"range": 30,
+			"target_damage": 0,
+			"target_heal": 0,
+			"self_heal": 0,
+			"apply_effect": "earth_wall"
+		},
+	
+	
+	},
+	
+	"game_state": {
+		"player_state": {
+			"tester2": {
+				"character": "wizard",
+				"team": "red",
+				"max_hp": 500,
+				"cur_hp": 200,
+				"max_energy": 100,
+				"cur_energy": 100,
+				"cooldowns": [0,0,10,0],
+				"loc_x": 0,
+				"loc_y": 0
+			}
+		},
+		"object_state": {
+			"red_crystal": {
+				"max_hp": 100,
+				"cur_hp": 100,
+			},
+			"red_tower_top": {
+				"max_hp": 100,
+				"cur_hp": 100
+			},
+			"red_tower_mid": {
+				"max_hp": 100,
+				"cur_hp": 100
+			},
+			"red_tower_bot": {
+				"max_hp": 100,
+				"cur_hp": 100
+			},
+			"blue_crystal": {
+				"max_hp": 100,
+				"cur_hp": 100,
+			},
+			"blue_tower_top": {
+				"max_hp": 100,
+				"cur_hp": 100
+			},
+			"blue_tower_mid": {
+				"max_hp": 100,
+				"cur_hp": 100
+			},
+			"blue_tower_bot": {
+				"max_hp": 100,
+				"cur_hp": 100
+			}
+		}
+	
+	}
+}
+	
